@@ -21,7 +21,7 @@ Edits the Void Locus stage to be a regular stage 4. Enemies/Interactables/Credit
 - Actually fixes bugs
   - infinite loop on same stage
   - bazaar dream stage 4 not working
-  - all enemies being on the void team instead of monster team
+  - all enemies (except TP) being on the void team instead of monster team
 
 **0.8.2**
 
