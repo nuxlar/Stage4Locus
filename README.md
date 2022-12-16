@@ -16,6 +16,8 @@ Edits the Void Locus stage to be a regular stage 4. Enemies/Interactables/Credit
 **0.9.0**
 
 - Reduces Jailer and Devastator director credit cost (they rarely pop up if ever)
+- Adds boss music to tp event (same as abyssal)
+- Void Seeds are immediately completed but the enemies are on the same monster team (figured it could be a funny elite "event")
 - Actually fixes bugs
   - infinite loop on same stage
   - bazaar dream stage 4 not working

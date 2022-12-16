@@ -44,6 +44,7 @@ namespace Stage4Locus
     {
       On.RoR2.VoidStageMissionController.Start += VoidStageMissionControllerStart;
       On.RoR2.ClassicStageInfo.Start += ClassicStageInfoStart;
+      On.RoR2.CombatDirector.Awake += CombatDirectorAwake;
       EditSceneDef();
       EditMonsters();
     }
@@ -94,6 +95,15 @@ namespace Stage4Locus
     {
       if (SceneCatalog.GetSceneDefFromSceneName("voidstage") == SceneCatalog.currentSceneDef)
         self.sceneDirectorInteractibleCredits = 400;
+      orig(self);
+    }
+
+    private void CombatDirectorAwake(On.RoR2.CombatDirector.orig_Awake orig, RoR2.CombatDirector self)
+    {
+      if (!NetworkServer.active)
+        return;
+      if (SceneCatalog.GetSceneDefFromSceneName("voidstage") == SceneCatalog.currentSceneDef)
+        self.teamIndex = TeamIndex.Monster;
       orig(self);
     }
 
