@@ -9,7 +9,7 @@ using UnityEngine.AddressableAssets;
 
 namespace Stage4Locus
 {
-  [BepInPlugin("com.Nuxlar.Stage4Locus", "Stage4Locus", "0.9.0")]
+  [BepInPlugin("com.Nuxlar.Stage4Locus", "Stage4Locus", "0.9.1")]
 
   public class Stage4Locus : BaseUnityPlugin
   {
@@ -69,7 +69,7 @@ namespace Stage4Locus
 
     private void EditMonsters()
     {
-      jailer.directorCreditCost = parent.directorCreditCost;
+      jailer.directorCreditCost = 300; // vanilla 450
       devastator.directorCreditCost = grovetender.directorCreditCost;
       DirectorCardCategorySelection.Category basicMonsters = new DirectorCardCategorySelection.Category();
       basicMonsters.name = "Basic Monsters";

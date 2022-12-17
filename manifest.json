@@ -1,6 +1,6 @@
 ﻿{
 	"name": "Stage4Locus",
-	"version_number": "0.9.0",
+	"version_number": "0.9.1",
 	"website_url": "",
 	"description": "Adds Void Locus as an alt Stage 4 by changing Enemies/Interactables/Credits.",
 	"dependencies": [

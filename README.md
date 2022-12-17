@@ -13,6 +13,10 @@ Edits the Void Locus stage to be a regular stage 4. Enemies/Interactables/Credit
 
 ## Changelog
 
+**0.9.1**
+
+- Increases Jailer director credit cost (Vanilla 450, Current 300)
+
 **0.9.0**
 
 - Reduces Jailer and Devastator director credit cost (they rarely pop up if ever)
