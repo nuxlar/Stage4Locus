@@ -13,6 +13,11 @@ Edits the Void Locus stage to be a regular stage 4. Enemies/Interactables/Credit
 
 ## Changelog
 
+**0.9.2**
+
+- Increases selection weight values of enemies (now matches abyssal)
+- Increases Jailer director credit cost (Vanilla 450, Current 350)
+
 **0.9.1**
 
 - Increases Jailer director credit cost (Vanilla 450, Current 300)
