@@ -9,7 +9,7 @@ using UnityEngine.AddressableAssets;
 
 namespace Stage4Locus
 {
-  [BepInPlugin("com.Nuxlar.Stage4Locus", "Stage4Locus", "0.9.1")]
+  [BepInPlugin("com.Nuxlar.Stage4Locus", "Stage4Locus", "0.9.2")]
 
   public class Stage4Locus : BaseUnityPlugin
   {
@@ -69,19 +69,19 @@ namespace Stage4Locus
 
     private void EditMonsters()
     {
-      jailer.directorCreditCost = 300; // vanilla 450
+      jailer.directorCreditCost = 350; // vanilla 450
       devastator.directorCreditCost = grovetender.directorCreditCost;
       DirectorCardCategorySelection.Category basicMonsters = new DirectorCardCategorySelection.Category();
       basicMonsters.name = "Basic Monsters";
-      basicMonsters.cards = new DirectorCard[] { new DirectorCard() { spawnCard = imp, selectionWeight = 2 }, new DirectorCard() { spawnCard = lemurian, selectionWeight = 2 }, new DirectorCard() { spawnCard = vulture, selectionWeight = 1 } };
+      basicMonsters.cards = new DirectorCard[] { new DirectorCard() { spawnCard = imp, selectionWeight = 3 }, new DirectorCard() { spawnCard = lemurian, selectionWeight = 3 }, new DirectorCard() { spawnCard = vulture, selectionWeight = 3 } };
       basicMonsters.selectionWeight = 3;
       DirectorCardCategorySelection.Category minibosses = new DirectorCardCategorySelection.Category();
       minibosses.name = "Minibosses";
-      minibosses.cards = new DirectorCard[] { new DirectorCard() { spawnCard = greaterWisp, selectionWeight = 1 }, new DirectorCard() { spawnCard = parent, selectionWeight = 1 }, new DirectorCard() { spawnCard = jailer, selectionWeight = 1 } };
-      minibosses.selectionWeight = 2;
+      minibosses.cards = new DirectorCard[] { new DirectorCard() { spawnCard = greaterWisp, selectionWeight = 3 }, new DirectorCard() { spawnCard = parent, selectionWeight = 3 }, new DirectorCard() { spawnCard = jailer, selectionWeight = 3 } };
+      minibosses.selectionWeight = 3;
       DirectorCardCategorySelection.Category champions = new DirectorCardCategorySelection.Category();
       champions.name = "Champions";
-      champions.cards = new DirectorCard[] { new DirectorCard() { spawnCard = impBoss, selectionWeight = 1 }, new DirectorCard() { spawnCard = grovetender, selectionWeight = 1 }, new DirectorCard() { spawnCard = devastator, selectionWeight = 1 } };
+      champions.cards = new DirectorCard[] { new DirectorCard() { spawnCard = impBoss, selectionWeight = 2 }, new DirectorCard() { spawnCard = grovetender, selectionWeight = 2 }, new DirectorCard() { spawnCard = devastator, selectionWeight = 2 } };
       champions.selectionWeight = 2;
       DirectorCardCategorySelection.Category special = new DirectorCardCategorySelection.Category();
       special.name = "Special";
